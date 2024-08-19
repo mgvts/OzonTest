@@ -1,0 +1,39 @@
+.progress-bar {
+    @apply size-fit
+}
+
+.bar {
+    @apply flex justify-center items-center size-full relative
+    outline outline-gray
+}
+
+#progress-bar.hide {
+    @apply hidden;
+    display: none;
+}
+
+#progress-value {
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+#progress-value.animate {
+    transform-origin: center center;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bar-element {
+    @apply relative size-fit my-auto;
+}
+
+.circle {
+    @apply size-[160px] relative
+}

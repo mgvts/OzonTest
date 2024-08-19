@@ -1,0 +1,93 @@
+/* Base styles for progress section */
+
+.portrait-mode .progress {
+    @apply w-[568px] h-[320px] flex-row
+}
+
+.landscape-mode .progress {
+    @apply h-[568px] w-[320px] flex-col
+}
+
+.progress {
+    @apply
+    flex
+    m-auto
+    relative
+}
+
+.progress-container {
+    @apply size-full flex justify-center items-center
+}
+
+#progress-component {
+    @apply relative m-auto size-fit
+}
+
+
+.menu {
+    @apply size-full flex items-center justify-center
+}
+
+.menu-container {
+    @apply flex flex-col items-center gap-6 size-fit
+}
+
+.portrait-mode .menu-container {
+    @apply ml-[-2rem]
+}
+
+.landscape-mode .menu-container {
+    @apply mt-[-2rem]
+}
+
+.menu-item {
+    @apply flex items-center w-30 h-8
+}
+
+.value-input {
+    @apply
+    w-12 h-8
+    rounded-full
+    ps-3 pb-1
+    border
+    border-black
+    cursor-text
+    bg-white
+    font-medium
+    text-black
+}
+
+.label-text {
+    @apply ms-3 font-medium text-black
+}
+
+.toggle {
+    @apply
+    cursor-pointer
+    bg-gray
+    w-12 h-8
+    rounded-full
+    relative
+}
+
+.toggle::after {
+    @apply
+    content-['']
+    absolute
+    top-[3px]
+    left-[2px]
+    bg-white
+    rounded-full
+    size-[26px]
+    transition-all
+}
+
+input:checked + .toggle {
+    @apply bg-blue
+}
+
+input:checked + .toggle::after {
+    @apply
+    translate-x-full
+    left-[-6px]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
+</head>
+<body>
+<div id="app">
+    <div class="page">
+        <div class="progress">
+            <div class="progress-container">
+                <div id="progress-component"></div>
+            </div>
+            <div class="menu">
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <input
+                                type="number"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                                class="value-input"
+                                id="value"
+                        />
+                        <label for="value" class="label-text">Value</label>
+                    </div>
+                    <div class="menu-item">
+                        <label class="inline-flex items-center ">
+                            <input type="checkbox" class="sr-only peer" id="animate">
+                            <span class="toggle"></span>
+                            <span class="label-text">Animate</span>
+                        </label>
+                    </div>
+                    <div class="menu-item">
+                        <label class="inline-flex items-center ">
+                            <input type="checkbox" class="sr-only peer" id="hide">
+                            <span class="toggle"></span>
+                            <span class="label-text">Hide</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="main.js" type="module"></script>
+</body>
+</html>

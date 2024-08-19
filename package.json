@@ -1,0 +1,22 @@
+{
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "postcss src/styles/main.pcss -o dist/styles.css",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^3.4.10"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
