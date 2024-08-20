@@ -19,7 +19,6 @@ valueInput.addEventListener('input', (ev) => {
     }
     ev.target.value = newValue
 })
-
 animateInput.addEventListener('change', () => actions.toggleAnimate())
 hideInput.addEventListener('change', () => actions.toggleHide())
 

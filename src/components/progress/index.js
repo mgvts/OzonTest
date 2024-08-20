@@ -51,7 +51,6 @@ const component = {
                 return cnt.element.classList.contains('hide');
             },
             toggleHide() {
-                console.log(cnt.actions.isHide())
                 if (cnt.actions.isHide()) {
                     cnt.actions.show();
                 } else {
@@ -60,9 +59,6 @@ const component = {
             },
             show() {
                 cnt.element.classList.remove('hide');
-            },
-            isShow() {
-                return cnt.element.classList.contains('show')
             },
             setValue(value) {
                 let newValue = parseInt(value, 10);
