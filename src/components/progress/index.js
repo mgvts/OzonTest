@@ -1,4 +1,3 @@
-import './main.pcss'
 /**
  * usage:
  * to start call `placeById with id in this element will be placed html of progress bar
