@@ -1,4 +1,4 @@
-import progressComponent from './components/progress/index'
+import progressComponent from './components/progress/index.js'
 
 
 progressComponent.placeById('progress-component')

@@ -4,10 +4,13 @@
   "homepage": "https://mgvts.github.io/OzonTest",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./"
+    "build": "parcel build src/index.html --public-url ./",
+    "gh-pages": "gh-pages -d ./src",
+    "build:css": "npx tailwindcss -i src/styles/main.css -o ./src/styles/style.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "postcss": "^8.4.41",
     "postcss-cli": "^9.0.1",

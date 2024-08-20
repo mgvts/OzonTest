@@ -1,3 +1,7 @@
+@import "preview.pcss";
+@import "main.pcss";
+@import "../components/progress/main.pcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

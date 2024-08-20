@@ -1,7 +1,4 @@
-import './styles/main.css';
-import './styles/main.pcss';
-import './styles/preview.pcss';
-import './preview'
+import './preview.js'
 
 function handleOrientationChange() {
     const isPortrait = window.matchMedia("(orientation: portrait)").matches;
