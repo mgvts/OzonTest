@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Project</title>
+    <link rel="icon" href="styles/favicon.png">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <title>Ozon test</title>
 </head>
 <body>
 <div id="app">
@@ -15,25 +17,27 @@
             <div class="menu">
                 <div class="menu-container">
                     <div class="menu-item">
-                        <input
-                                type="number"
-                                placeholder="0"
-                                min="0"
-                                max="100"
-                                class="value-input"
-                                id="value"
-                        />
-                        <label for="value" class="label-text">Value</label>
+                        <label>
+                            <input
+                                    type="number"
+                                    placeholder="0"
+                                    min="0"
+                                    max="100"
+                                    class="value-input"
+                                    id="value"
+                            />
+                            <span class="label-text">Value</span>
+                        </label>
                     </div>
                     <div class="menu-item">
-                        <label class="inline-flex items-center ">
+                        <label>
                             <input type="checkbox" class="sr-only peer" id="animate">
                             <span class="toggle"></span>
                             <span class="label-text">Animate</span>
                         </label>
                     </div>
                     <div class="menu-item">
-                        <label class="inline-flex items-center ">
+                        <label>
                             <input type="checkbox" class="sr-only peer" id="hide">
                             <span class="toggle"></span>
                             <span class="label-text">Hide</span>

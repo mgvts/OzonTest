@@ -43,7 +43,9 @@
 .menu-item {
     @apply flex items-center w-30 h-8
 }
-
+.menu-item label {
+    @apply inline-flex items-center;
+}
 .value-input {
     @apply
     w-12 h-8
@@ -67,7 +69,7 @@
     bg-gray
     w-12 h-8
     rounded-full
-    relative
+    relative;
 }
 
 .toggle::after {
