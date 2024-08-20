@@ -25,4 +25,4 @@ function handleOrientationChange() {
 window.addEventListener("orientationchange", handleOrientationChange);
 
 // Call the function on load to set initial state
-handleOrientationChange();
+// handleOrientationChange();

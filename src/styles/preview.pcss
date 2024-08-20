@@ -43,20 +43,29 @@
 .menu-item {
     @apply flex items-center w-30 h-8
 }
+
 .menu-item label {
     @apply inline-flex items-center;
 }
+
 .value-input {
     @apply
     w-12 h-8
     rounded-full
-    ps-3 pb-1
+    ps-2
     border
     border-black
     cursor-text
+    active:border-black
     bg-white
     font-medium
     text-black
+
+    focus:border-black
+    focus:outline
+    focus-visible:border-black
+    focus:outline-1
+    focus:outline-black
 }
 
 .label-text {
