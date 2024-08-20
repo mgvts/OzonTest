@@ -13,8 +13,10 @@ const component = {
                     <div class="circle">
                         <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                             <!-- Background Circle -->
-                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray"
-                                    stroke-width="2"></circle>
+                            <circle cx="18" cy="18" r="16" 
+                                fill="none" 
+                                class="stroke-current text-gray"
+                                stroke-width="2"></circle>
                             <!-- Progress Circle -->
                             <circle
                                     id="progress-value"
