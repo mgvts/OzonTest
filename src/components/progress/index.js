@@ -47,16 +47,16 @@ const component = {
         const cnt = this
         return {
             hide() {
-                cnt.element.classList.add('hide');
+                cnt.element.classList.add('hide')
             },
             isHide() {
                 return cnt.element.classList.contains('hide');
             },
             toggleHide() {
                 if (cnt.actions.isHide()) {
-                    cnt.actions.show();
+                    cnt.actions.show()
                 } else {
-                    cnt.actions.hide();
+                    cnt.actions.hide()
                 }
             },
             show() {
@@ -65,15 +65,16 @@ const component = {
             setValue(value) {
                 let newValue = parseInt(value, 10);
                 if (isNaN(newValue) || newValue < 0) {
-                    newValue = 0; // Set to minimum if out of range
+                    newValue = 0
                 } else if (newValue > 100) {
-                    newValue = 100; // Set to maximum if out of range
+                    newValue = 100
                 }
 
                 cnt.valueElement.style.strokeWidth = newValue === 0 ? '0' : '2'
                 cnt.valueElement.style.strokeDashoffset = `${100 - newValue}`;
 
                 cnt.valueElement.value = newValue;
+                return newValue
             },
             isAnimate() {
                 return cnt.valueElement.classList.contains('animate')

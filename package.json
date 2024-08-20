@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "homepage": "https://mgvts.github.io/OzonTest",
   "scripts": {
-    "build:css": "tailwindcss build -i src/styles/main.pcss  src/styles/preview.pcss src/components/progress/main.pcss -o dist/styles.css",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "gh-pages": "gh-pages -d dist"

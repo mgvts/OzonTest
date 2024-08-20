@@ -14,11 +14,15 @@
 }
 
 .progress-container {
-    @apply size-full flex justify-center items-center
+    @apply size-full flex justify-center items-center flex-col
+}
+
+.progress-title {
+    @apply w-full text-start font-medium
 }
 
 #progress-component {
-    @apply relative m-auto size-fit
+    @apply relative m-auto size-[160px]
 }
 
 
@@ -27,7 +31,7 @@
 }
 
 .menu-container {
-    @apply flex flex-col items-center gap-6 size-fit
+    @apply flex flex-col items-center gap-7 h-fit w-1/2 mt-5
 }
 
 .portrait-mode .menu-container {
@@ -39,11 +43,11 @@
 }
 
 .menu-item {
-    @apply flex items-center w-30 h-8
+    @apply flex items-center h-8 w-full
 }
 
 .menu-item label {
-    @apply inline-flex items-center;
+    @apply inline-flex items-center w-full
 }
 
 .value-input {
@@ -67,7 +71,7 @@
 }
 
 .label-text {
-    @apply ms-3 font-medium text-black
+    @apply ms-7 font-medium text-black
 }
 
 .toggle {
