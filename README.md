@@ -3,7 +3,7 @@
 Here simple realization of circular progress bar
 
 
-component description:
+## component description:
 - import as `import progressComponent from './components/progress/index'`
 - Initialize with 
     - `progressComponent.placeById(idToBePlaced)`
@@ -45,3 +45,9 @@ component description:
     - `toggleAnimate()` toggles animation
     - `isAnimate()` returns `boolean` if value animating
 
+## Preview page
+menu with control blocks
+- setting value `listener: event => actions.setValue(event.target.value)`
+- toggle Animate `listener: actions.toggleAnimate`
+- toggle Hide `listener: actions.toggleHide`
+- control orientation sets class `portrait-mode | landscape-mode`

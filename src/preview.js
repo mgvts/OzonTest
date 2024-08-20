@@ -10,7 +10,7 @@ const hideInput = document.getElementById('hide')
 const {actions} = progressComponent
 
 valueInput.addEventListener('input', (ev) => {
-    actions.setValue(valueInput.value)
+    actions.setValue(ev.target.value)
     let newValue = parseInt(ev.target.value, 10);
     if (isNaN(newValue) || newValue < 0) {
         newValue = ''; // Set to minimum if out of range
